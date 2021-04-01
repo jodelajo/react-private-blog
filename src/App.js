@@ -5,12 +5,11 @@ import {
     Route,
     NavLink,
     useHistory,
-    Redirect
 } from 'react-router-dom';
 import Home from "./pages/Home";
-import Login from "./pages/Login";
 import BlogPost from "./pages/BlogPost";
 import Blog from "./component/Blog";
+
 
 import PrivateRoute from "./component/PrivateRoute";
 
