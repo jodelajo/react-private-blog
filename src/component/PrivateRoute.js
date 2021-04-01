@@ -8,7 +8,6 @@ function PrivateRoute({children, isAuthenticated, ...rest}) {
     if(isAuthenticated === false) {
         return <Redirect to={`/login`}/>
     }
-    // console.log()
     return (
         <Route {...rest}>
             {children}

@@ -5,12 +5,11 @@ import {
     Route,
     NavLink,
     useHistory,
-    Redirect
 } from 'react-router-dom';
 import Home from "./pages/Home";
-import Login from "./pages/Login";
 import BlogPost from "./pages/BlogPost";
 import Blog from "./component/Blog";
+
 
 import PrivateRoute from "./component/PrivateRoute";
 
@@ -63,7 +62,6 @@ function App() {
                     <Home/>
                 </Route>
                 <Route path="/login">
-
                     <div className="main">
                         <button type="button" className="login-button" onClick={handleClickLogIn}>Log in</button>
                     </div>
@@ -79,9 +77,7 @@ function App() {
                 <PrivateRoute path="/blog/:slug" isAuthenticated={isAuthenticated}>
                     <Blog/>
                 </PrivateRoute>
-
             </Switch>
-
         </>
     );
 }
