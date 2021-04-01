@@ -62,7 +62,6 @@ function App() {
                     <Home/>
                 </Route>
                 <Route path="/login">
-
                     <div className="main">
                         <button type="button" className="login-button" onClick={handleClickLogIn}>Log in</button>
                     </div>
@@ -78,9 +77,7 @@ function App() {
                 <PrivateRoute path="/blog/:slug" isAuthenticated={isAuthenticated}>
                     <Blog/>
                 </PrivateRoute>
-
             </Switch>
-
         </>
     );
 }
